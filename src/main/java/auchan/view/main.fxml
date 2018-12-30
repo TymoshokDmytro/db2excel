@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auchan.view.MainController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="76.0" layoutY="78.0" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0" />
+      <ComboBox fx:id="comboProfile" layoutX="536.0" layoutY="26.0" onAction="#onComboProfileChange" prefWidth="150.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="35.0" />
+      <Button fx:id="SQL2Excel" defaultButton="true" layoutX="525.0" layoutY="240.0" mnemonicParsing="false" onAction="#onSQL2Excel" prefHeight="50.0" prefWidth="150.0" text="SQL 2 Excel Magic" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="240.0" />
+      <Label layoutX="525.0" layoutY="14.0" text="Profile:" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="15.0" />
+      <ComboBox fx:id="comboDB" layoutX="525.0" layoutY="142.0" onAction="#onComboDBchange" prefWidth="150.0" AnchorPane.rightAnchor="25.0" />
+      <Label layoutX="525.0" layoutY="118.0" text="Database" AnchorPane.rightAnchor="110.0" />
+      <ComboBox fx:id="comboStore" layoutX="525.0" layoutY="201.0" prefWidth="150.0" AnchorPane.rightAnchor="25.0" />
+      <Label layoutX="525.0" layoutY="177.0" text="Store" AnchorPane.rightAnchor="140.0" />
+      <Button fx:id="saveButton" layoutX="526.0" layoutY="74.0" mnemonicParsing="false" onAction="#onSaveProfile" prefWidth="65.0" text="Save" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="75.0" />
+      <Button fx:id="deleteButton" layoutX="600.0" layoutY="74.0" mnemonicParsing="false" onAction="#onDeleteProfile" prefWidth="65.0" text="Delete" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="75.0" />
+      <ProgressBar fx:id="progressBar" layoutX="521.0" layoutY="300.0" prefHeight="20.0" prefWidth="150.0" progress="0.0" visible="false" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="300.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="531.0" layoutY="333.0" prefHeight="118.0" prefWidth="150.0" visible="false" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="340.0" />
+   </children>
+</AnchorPane>

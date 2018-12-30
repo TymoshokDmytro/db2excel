@@ -1,0 +1,5 @@
+DB2Excel version 1.0-final
+Just copy the SQLs with ; separator
+and see the conversion SQL -> Excel magic
+------------------------------
+Author : NonameDev
